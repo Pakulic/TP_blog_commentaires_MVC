@@ -9,7 +9,7 @@ include 'libs/render.php';
 
 class Post
 {
-  //récupère tous le post associé à l'id
+  //récupère tous les posts associés à l'id
 
   public function controlGetPost($id)
   {
@@ -18,7 +18,7 @@ class Post
     return $donneepost;
   }
 
-  // affiche la page d'accueil et renvoie "la liste des vides est vide" si pas de posts
+  // j'affiche la page d'accueil et renvoie "la liste des vides est vide" si pas de post
 
   public function index()
   {

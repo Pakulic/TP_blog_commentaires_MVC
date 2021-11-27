@@ -8,12 +8,12 @@
 <?php
 foreach ($comment as $comment) {
 ?>
-  <p>Date :<?= $comment['comment_date'] ?></p>
+  <p>Date :<?= $comment['comment_date_fr'] ?></p>
   <p>Auteur :<?= $comment['author'] ?></p>
   <p>Commentaire :<?= $comment['comment'] ?></p>
 <?php
 }
 ?>
-<form action="index.php?action=formAddComment&id=<?= $post['post_id'] ?>" method="POST">
-  <button>Ajouter un commentaire</button>
+<form action="view<?= $post['post_id'] ?>-addcomment" method="POST">
+  <button name='id' value="$post['post_id']" >Ajouter un commentaire</button>
 </form>

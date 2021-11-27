@@ -8,7 +8,7 @@ function render($file, $params = [])
   ob_clean();
   //je charge le fichier vue
   require "Template/$file.html.php";
-  //je le rend dans la variable $pageContent
+  //je le rends dans la variable $pageContent
   $pageContent = ob_get_clean();
   //je l'affiche dans le template 'base'
   require "Template/base.html.php";
